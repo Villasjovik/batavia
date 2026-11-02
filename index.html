@@ -587,6 +587,7 @@ background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:
 @property --pb-hover{syntax:'<length>';inherits:false;initial-value:0px}
 .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:52px;perspective:1800px;perspective-origin:50% 45%;max-width:760px;margin-left:auto;margin-right:auto}
 .price-grid.three{grid-template-columns:repeat(3,1fr);gap:22px;max-width:1120px}
+.price-grid.one{grid-template-columns:minmax(0,440px);justify-content:center}
 .price-note{max-width:620px;margin:40px auto 0;text-align:center;font-family:'Inter',sans-serif;font-size:12.5px;line-height:1.7;color:var(--muted);letter-spacing:.02em}
 @media(max-width:700px){.price-note{font-size:11.5px;margin-top:32px}}
 .price-grid.three>.pkg-col:nth-child(2){--pb-rot:calc(4deg * var(--pr-damp,1));animation-delay:-1.5s;animation-duration:15.9s}
@@ -1507,32 +1508,9 @@ position:relative;overflow:hidden;transition:color .35s}
   <div class="pr-orb pr-orb-2" aria-hidden="true"></div>
   <div class="pr-inner">
     <p class="sec-lbl rv">Collaboration overview</p>
-    <h2 class="sec-h2 ws rv" lang="en">Two ways to build <em class="pi-reach">content and reach.</em></h2>
+    <h2 class="sec-h2 ws rv" lang="en">One video to <em class="pi-reach">start with.</em></h2>
 
-    <div class="price-grid">
-
-      <div class="pkg-col rv d1" data-pkg-col="content">
-        <div class="pkg-content-head">
-          <span class="pkg-boost-tag">For your channels</span>
-          <span class="pkg-boost-title">Image production</span>
-        </div>
-        <div class="price-box rv" data-pkg-box="content">
-          <i class="pr-bg" data-n="01" aria-hidden="true"></i>
-          <h3 class="price-title">Content Package</h3>
-          <p class="price-sub">20 product and lifestyle images &middot; Full usage rights</p>
-          <div class="price-plate">
-            <p class="price-total-lbl">Production fee</p>
-            <p class="price-total" data-base="1200">1,200</p>
-            <span class="price-unit">EUR</span>
-          </div>
-          <div class="price-includes">
-            <p class="pi hi"><span>20 product and lifestyle images for your own channels, website and advertising</span></p>
-            <p class="pi"><span>Batavia owns all delivered material, with permanent rights for your own channels, website and paid advertising, without time limits</span></p>
-            <p class="pi"><span>Concept and schedule approved with Batavia; styling, photography and editing included</span></p>
-            <p class="pi"><span>Image production for Batavia’s own marketing, without publication in Villa Sjövik’s channels</span></p>
-          </div>
-        </div>
-      </div>
+    <div class="price-grid one">
 
       <div class="pkg-col featured rv d2" data-pkg-col="start">
         <div class="pkg-boost" role="group" aria-pressed="false" data-pkg="start">
@@ -1562,7 +1540,7 @@ position:relative;overflow:hidden;transition:color .35s}
         </div>
         <div class="price-box featured rv" data-pkg-box="start">
           <i class="pr-sheen" aria-hidden="true"></i>
-          <i class="pr-bg" data-n="02" aria-hidden="true"></i>
+          <i class="pr-bg" data-n="01" aria-hidden="true"></i>
           <span class="price-ribbon kamp">Discounted</span>
           <h3 class="price-title">Video Pack</h3>
           <p class="price-sub">1 video &middot; 2 stories with link and discount code</p>
